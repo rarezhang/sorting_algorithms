@@ -23,3 +23,13 @@
     + Best-case performance: O(n)  
     + Average performance: O(n**2)  
     + Worst-case space complexity: О(n) total, O(1)  
+    
+    
+## shell sort  
+- an in-place comparison sort. Starts by sorting pairs of elements far apart from each other, then progressively reducing the gap between elements to be compared  
+-  improves on the insertion sort by breaking the original list into a number of smaller sublists, each of which is sorted using an insertion sort  
+    + Data structure: Array  
+    + Worst-case performance: O(n*(log(n)*2))  
+    + Best-case performance: O(nlogn)  
+    + Average performance: depends on gap sequence  
+    + Worst-case space complexity: О(n) total, O(1)  
