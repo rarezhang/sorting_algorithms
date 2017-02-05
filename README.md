@@ -35,10 +35,20 @@
     + Worst-case space complexity: О(n) total, O(1)  
     
     
-# merge sort  
+## merge sort  
 - comparison-based sorting algorithm. Divide the unsorted list into n sublists, each containing 1 element (a list of 1 element is considered sorted). Repeatedly merge sublists to produce new sorted sublists until there is only 1 sublist remaining. This will be the sorted list.
     + Data structure: Array  
     + Worst-case performance: O(n*lon(n))  
     + Best-case performance: O(n*lon(n))  
     + Average performance: O(n*lon(n))  
     + Worst-case space complexity: О(n) total, O(n)  
+    
+    
+## quick sort  
+- comparison-based sorting algorithm. First selects a value, which is called the pivot value. (many different ways to choose the pivot value, simply use the first item in the list) The role of the pivot value is to assist with splitting the list. The actual position where the pivot value belongs in the final sorted list, commonly called the split point, will be used to divide the list for subsequent calls to the quick sort (divide and conquer)  
+    + Data structure: Array  
+    + Worst-case performance: O(n**2)  
+    + Best-case performance: O(n*lon(n)) (simple partition) or O(n) (three-way partition and equal keys)
+    + Average performance: O(n*lon(n))  
+    + Worst-case space complexity: О(n)  
+    
