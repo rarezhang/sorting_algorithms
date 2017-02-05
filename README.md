@@ -1,3 +1,6 @@
+# Sorting algorithms implemented in python
+
+
 ## bubble sort
 - repeatedly steps through the list to be sorted, compares each pair of adjacent items and swaps them if they are in the wrong order  
     + Data structure: Array  
@@ -56,7 +59,21 @@
 ## heap sort
 - comparison-based sorting algorithm. Creating a Heap of the unsorted list. Then a sorted array is created by repeatedly removing the largest/smallest element from the heap, and inserting it into the array. The heap is reconstructed after each removal.
     + Data structure: Array  
-    + Worst-case performance: O(n**2)  
-    + Best-case performance: O(n*lon(n)) (simple partition) or O(n) (three-way partition and equal keys)
+    + Worst-case performance: O(n*lon(n))  
+    + Best-case performance: O(n*lon(n))  
     + Average performance: O(n*lon(n))  
-    + Worst-case space complexity: О(n)  
+    + Worst-case space complexity: О(1)  
+    
+    
+## bucket sort 
+- a distribution sort. works by distributing the elements of an array into a number of buckets. Each bucket is then sorted individually, either using a different sorting algorithm, or by recursively applying the bucket sorting algorithm.  
+    + Data structure: Array  
+    + Worst-case performance: O(n**2)  
+    + Best-case performance: O(n+k)  
+    + Average performance: O(n+k)  
+    + Worst-case space complexity: О(n*k)  
+    
+Note:
+- Counting sort: buckets hold only a single value  
+- Bucket sort: buckets hold a range of values  
+- Radix sort: buckets hold values based on digits within their values  
