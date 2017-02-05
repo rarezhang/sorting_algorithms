@@ -1,5 +1,6 @@
 """
 Shell sort using Shell's (original) gap sequence: n/2, n/4, ..., 1.
+https://youtu.be/qzXAVXddcPU
 """
 
 
@@ -20,7 +21,7 @@ def shell_sort(L):
 
     length = len(L)
     gap = length // 2
-    while gap > 0:  # loop over gaps
+    while gap > 0:
         # ------- insertion sort ---------------
         for i in range(gap, length):
             current_value = L[i]
