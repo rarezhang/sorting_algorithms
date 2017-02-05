@@ -14,3 +14,12 @@
     + Best-case performance: O(n**2)  
     + Average performance: O(n**2)  
     + Worst-case space complexity: О(n) total, O(1)  
+    
+    
+## insertion sort 
+- builds the final sorted array (or list) one item at a time. Maintains a sorted sublist in the lower positions of the list. Each new item is then "inserted" back into the previous sublist such that the sorted sublist is one item larger  
+    + Data structure: Array  
+    + Worst-case performance: O(n**2)  
+    + Best-case performance: O(n)  
+    + Average performance: O(n**2)  
+    + Worst-case space complexity: О(n) total, O(1)  
