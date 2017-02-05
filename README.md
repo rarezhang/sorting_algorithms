@@ -52,3 +52,11 @@
     + Average performance: O(n*lon(n))  
     + Worst-case space complexity: О(n)  
     
+    
+## heap sort
+- comparison-based sorting algorithm. Creating a Heap of the unsorted list. Then a sorted array is created by repeatedly removing the largest/smallest element from the heap, and inserting it into the array. The heap is reconstructed after each removal.
+    + Data structure: Array  
+    + Worst-case performance: O(n**2)  
+    + Best-case performance: O(n*lon(n)) (simple partition) or O(n) (three-way partition and equal keys)
+    + Average performance: O(n*lon(n))  
+    + Worst-case space complexity: О(n)  
