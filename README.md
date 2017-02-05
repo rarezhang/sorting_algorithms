@@ -30,6 +30,15 @@
 -  improves on the insertion sort by breaking the original list into a number of smaller sublists, each of which is sorted using an insertion sort  
     + Data structure: Array  
     + Worst-case performance: O(n*(log(n)*2))  
-    + Best-case performance: O(nlogn)  
+    + Best-case performance: O(n*lon(n))  
     + Average performance: depends on gap sequence  
     + Worst-case space complexity: О(n) total, O(1)  
+    
+    
+# merge sort  
+- comparison-based sorting algorithm. Divide the unsorted list into n sublists, each containing 1 element (a list of 1 element is considered sorted). Repeatedly merge sublists to produce new sorted sublists until there is only 1 sublist remaining. This will be the sorted list.
+    + Data structure: Array  
+    + Worst-case performance: O(n*lon(n))  
+    + Best-case performance: O(n*lon(n))  
+    + Average performance: O(n*lon(n))  
+    + Worst-case space complexity: О(n) total, O(n)  
