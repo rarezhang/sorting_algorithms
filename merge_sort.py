@@ -3,27 +3,6 @@ merge sort
 """
 
 
-def _merge(L1, L2, L):
-    """
-    merge two sorted lists into properly sized list
-    :param L1:
-    :param L2:
-    :param L:
-    :return:
-    """
-    i = j = 0
-    while i+j < len(L):
-        if j == len(L2) or (i < len(L1) and L1[i] < L2[j]):
-            # j==len(L2) -> L2 end
-            # i < len(L1) and L1[i] < L2[j] -> L1 not end, L1 has smaller item
-            L[i+j] = L1[i]  # copy ith element of L1 as next item of L
-            i += 1
-        else:
-            L[i+j] = L2[j]  # copy jth element of L2 as next item of L
-            j += 1
-    return L
-
-
 def merge_sort(L):
     """
     comparison-based sorting algorithm.
@@ -49,3 +28,24 @@ def merge_sort(L):
         merge_sort(L2)
         # merge results
         return _merge(L1, L2, L)  # merge sorted halves back into L
+
+
+def _merge(L1, L2, L):
+    """
+    merge two sorted lists into properly sized list
+    :param L1:
+    :param L2:
+    :param L:
+    :return:
+    """
+    i = j = 0
+    while i+j < len(L):
+        if j == len(L2) or (i < len(L1) and L1[i] < L2[j]):
+            # j==len(L2) -> L2 end
+            # i < len(L1) and L1[i] < L2[j] -> L1 not end, L1 has smaller item
+            L[i+j] = L1[i]  # copy ith element of L1 as next item of L
+            i += 1
+        else:
+            L[i+j] = L2[j]  # copy jth element of L2 as next item of L
+            j += 1
+    return L
