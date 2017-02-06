@@ -1,7 +1,7 @@
 # Sorting algorithms implemented in python
 
 
-## bubble sort
+## [bubble sort](https://github.com/rarezhang/sorting_algorithms/blob/master/bubble_sort.py)
 - repeatedly steps through the list to be sorted, compares each pair of adjacent items and swaps them if they are in the wrong order  
     + Data structure: Array  
     + Worst-case performance: O(n**2)  
