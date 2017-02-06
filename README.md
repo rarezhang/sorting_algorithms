@@ -80,7 +80,7 @@
     
     
 ## radix sort
-- non-comparative integer sorting algorithm.   
+- non-comparative integer sorting algorithm. do digit by digit sort starting from least significant digit to most significant digit. Radix sort uses counting sort as a subroutine to sort.  
     + Data structure: Array  
     + Worst-case performance: O((n+b) * logb(k))  
     + Average performance: O(d*(n+b)) time where b is the base for representing numbers
