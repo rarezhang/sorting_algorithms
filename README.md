@@ -73,6 +73,20 @@
     + Average performance: O(n+k)  
     + Worst-case space complexity: О(n*k)  
     
+    
+## counting sort
+- an integer sorting algorithm. works by counting the number of objects having distinct key values (kind of hashing). Then doing some arithmetic to calculate the position of each object in the output sequence.  
+- For problem instances in which the maximum key value is significantly smaller than the number of items, counting sort can be highly space-efficient, as the only storage it uses other than its input and output arrays is the Count array which uses space O(k). 
+    
+    
+## radix sort
+- non-comparative integer sorting algorithm.   
+    + Data structure: Array  
+    + Worst-case performance: O((n+b) * logb(k))  
+    + Average performance: O(d*(n+b)) time where b is the base for representing numbers
+    + Worst-case space complexity: О(w+N)  
+
+  
 Note:
 - Counting sort: buckets hold only a single value  
 - Bucket sort: buckets hold a range of values  
