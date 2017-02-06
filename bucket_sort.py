@@ -2,10 +2,10 @@
 bucket sort
 """
 
-DEFAULT = 2
+DEFAULT = 5
 
 
-def bucket_sort(L, bucket=DEFAULT):
+def bucket_sort(L, bucket_size=DEFAULT):
     """
     distributing the elements of an array into a number of buckets.
     Each bucket is then either using a different sorting algorithm,
@@ -31,12 +31,12 @@ def bucket_sort(L, bucket=DEFAULT):
     #     if i > max_value: max_value = i
 
     # initialize buckets
-    bucket_count = (max_value // bucket) + 1
+    bucket_count = (max_value // bucket_size) + 1
     buckets = [[] for _ in range(bucket_count)]
 
     # distribute values into buckets
     for i in L:
-        buckets[i//bucket_count].append(i)
+        buckets[i//bucket_size].append(i)
     # sort each bucket, place back into L
     for j in range(bucket_count):
         buckets[j].sort()  # any sort algorithm
