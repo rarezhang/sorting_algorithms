@@ -1,5 +1,10 @@
 """
 bucket sort
+consider a sequence S of n entries whose keys are integers in the range [ 0 , N − 1 ], it is possible to sort S in O ( n + N ) time. 
+because of the restrictive assumption
+about the format of the elements, we can avoid using comparisons
+not based on comparisons, but on using keys as indices into a bucket array B that has cells indexed from 0 to N − 1
+bucket-sort is efﬁcient when the range N of values for the keys is small compared to the sequence size n, say N = O ( n ) or N = O ( nlogn ) 
 """
 
 DEFAULT = 5
